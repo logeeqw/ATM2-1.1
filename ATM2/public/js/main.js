@@ -7,8 +7,8 @@
  */
 
 "use strict";
-const PROMPT = require(`readline-sync`);
 let balance, minus, add, donate;
+balance = 1.34;
 
 document.getElementById(`withdraw`).addEventListener("click", function withdraw() {
 
@@ -19,7 +19,12 @@ document.getElementById(`withdraw`).addEventListener("click", function withdraw(
     console.log(`Your new balance is ${balance}`);
 });
 
-document.getElementById(`b&s, acct`).addEventListener("click", function balance() {
+document.getElementById(`b&s`).addEventListener("click", function balance() {
+
+    console.log(`${balance}`)
+});
+
+document.getElementById(`acct`).addEventListener("click", function balance() {
 
     console.log(`${balance}`)
 });
@@ -50,7 +55,13 @@ document.getElementById(`donate`).addEventListener("click", function deposit()  
 
     console.log(`Your new balance is ${balance}`)
 });
-document.getElementById(`depcash, return`).addEventListener("click", function deposit()  {
+
+document.getElementById(`depcash`).addEventListener("click", function deposit()  {
+
+    console.log(`You must go to your local bank to do this.`)
+});
+
+document.getElementById(`return`).addEventListener("click", function deposit()  {
 
     console.log(`You must go to your local bank to do this.`)
 });
